@@ -1,0 +1,16 @@
+[2025-02-18 12:24:21 WARNING  LoginUser] Failed login attempt for username: khaled
+[2025-02-18 13:48:12 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-18 14:07:45 WARNING  AlLInvoices] No invoices found
+[2025-02-18 14:10:52 ERROR  AlLInvoices] Error while fetching invoices
+[2025-02-18 14:14:40 WARNING  AlLInvoices] No invoices found
+[2025-02-18 14:37:24 WARNING  Index] No store data found
+[2025-02-18 14:38:25 ERROR  RegisterUser] Invalid Register request received for username: khaled
+[2025-02-18 14:38:29 ERROR  RegisterUser] Invalid Register request received for username: khaled
+[2025-02-18 14:40:32 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-18 16:31:33 WARNING  AlLInvoices] No invoices found
+[2025-02-18 16:46:56 INFORMAT  Create] Invoice created successfully
+[2025-02-18 17:19:12 ERROR  AlLInvoices] Error while fetching invoices
+[2025-02-18 17:19:12 ERROR  LoginUser] Invalid login request received for username: 
+[2025-02-18 17:19:12 ERROR  ] An unhandled exception has occurred while executing the request.
+[2025-02-18 17:20:38 WARNING  AlLInvoices] No invoices found
+[2025-02-18 17:21:46 WARNING  AlLInvoices] No invoices found

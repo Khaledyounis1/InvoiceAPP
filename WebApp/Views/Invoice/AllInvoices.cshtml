@@ -1,0 +1,79 @@
+﻿@using WebApp.DTOS
+@model List<InvoiceDto>
+
+@{
+    ViewData["Title"] = "All Invoices";
+}
+
+<h2>All Invoices</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Invoice No</th>
+            <th>Invoice Date</th>
+            <th>Total</th>
+            <th>Taxes</th>
+            <th>Net Total</th>
+            <th>Store Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var invoice in Model)
+            {
+                <tr>
+                    <td>@invoice.InvoiceNO</td>
+                    <td>@invoice.InvoiceDate</td>
+                    <td>@invoice.nettotal?.ToString("C")</td>
+                    <td>@invoice.taxes?.ToString("C")</td>
+                    <td>@invoice.NetAftertaxes?.ToString("C")</td>
+                    <td>@invoice.storeName</td>
+                    <td>
+                        <a asp-controller="Invoice" asp-action="GetById" asp-route-id="@invoice.invoiceid" style="color:rebeccapurple">
+                            View Details
+                          
+                        </a>
+                        |
+                        <a href="#" onclick="confirmationDelete(event, '@Url.Action("Delete", "Invoice", new { id = invoice.invoiceid })')" style="color:red">
+                            Delete
+                        </a>
+
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center">No invoices found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+     function confirmationDelete(event, deleteUrl) {
+        event.preventDefault(); // Prevent default action
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "This action cannot be undone!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = deleteUrl; // Proceed with deletion
+            }
+        });
+    }
+
+</script>

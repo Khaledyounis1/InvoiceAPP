@@ -1,0 +1,52 @@
+﻿@using WebApp.DTOS
+@model RegisterDto
+
+@{
+    ViewData["Title"] = "Registerpage";
+}
+
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/LoginStyle.css")" />
+<!-- From Uiverse.io by nathann09 -->
+<body id="bodyid">
+
+    <form class="form" asp-action="RegisterUser" asp-controller="Account" method="post">
+        @if (ViewData["Errormessage"] != null)
+        {
+            <span id="username-error" style="color: red" class="error-message">
+                    @ViewData["Errormessage"]
+            </span>
+
+        }
+        @if (ViewData["PassErrormessage"] != null)
+        {
+            <span id="Password-error" style="color: red" class="error-message">
+                @ViewData["PassErrormessage"]
+            </span>
+
+        }
+        <p class="form-title">Sign in to your account</p>
+   
+        <div class="input-container">
+            <input asp-for="Username" id="usernamefield" type="text" placeholder="Enter UserName" required>
+        </div>
+        <div class="input-container">
+            <input asp-for="Email" id="emailfield" type="email" placeholder="Enter Email" required/>
+        </div>
+        <div class="input-container">
+            <input asp-for="Password" id="passwordfield" type="password" placeholder="Enter password" required />
+        </div>
+
+        <button type="submit" class="submit">
+            Sign Up
+        </button>
+
+        <p class="signup-link">
+            Already have account?
+            <a asp-controller="Account" asp-action="Loginpage">Login</a>
+        </p>
+    </form>
+</body>

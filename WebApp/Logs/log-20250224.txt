@@ -1,0 +1,3 @@
+[2025-02-24 09:59:16 WARNING  GetById] Invoice with ID 18 not found
+[2025-02-24 10:19:35 WARNING  GetById] Invoice with ID 18 not found
+[2025-02-24 14:07:08 WARNING  Create] Invalid model state for invoice creation

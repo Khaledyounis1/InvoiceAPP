@@ -1,0 +1,161 @@
+﻿
+
+.main-container {
+    padding: 30px 50px;
+}
+
+#DetailsText {
+text-align :center
+}
+
+.invoice-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+    .invoice-data .invoice-date {
+        margin-left: 10rem;
+    }
+
+#invoiceDate, #invoiceNo, #storeDropdown, .invoice-sammary input {
+    padding: 12px
+}
+
+.store-drop {
+    width: 40rem;
+}
+
+
+.invoice-sammary {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   
+    gap: 10px;
+    width : 100%;
+}
+.net-input {
+    margin-left:12px;
+
+}
+.invoice-sammary label {
+        margin-right: 40px;
+}
+
+
+/* Improved Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+    /* Title Styling */
+    .popup h2 {
+        margin-bottom: 15px;
+        text-align: center;
+        color: #333;
+    }
+
+    /* Label Styling */
+    .popup label {
+        display: block;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    /* Input Fields & Dropdown */
+    .popup input,
+    .popup select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+        /* Make readonly inputs visually different */
+        .popup input[readonly] {
+            background-color: #f5f5f5;
+        }
+
+    /* Buttons */
+    .popup .btn-primary {
+        width: 100%;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        .popup .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    /* Close Button */
+    .popup .close-btn {
+        width: 100%;
+        background: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+.actions {
+    margin-top : 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+}
+
+        .popup .close-btn:hover {
+            background: darkred;
+        }
+
+/* Background Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .popup {
+        width: 90%;
+    }
+}
+
+
+
+
+

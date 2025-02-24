@@ -1,0 +1,15 @@
+[2025-02-19 10:05:43 INFORMAT  Create] Invoice created successfully
+[2025-02-19 10:19:34 INFORMAT  Create] Invoice created successfully
+[2025-02-19 10:42:12 INFORMAT  Update] Invoice updated successfully
+[2025-02-19 10:42:41 INFORMAT  Update] Invoice updated successfully
+[2025-02-19 10:44:04 INFORMAT  Update] Invoice updated successfully
+[2025-02-19 10:58:25 INFORMAT  Delete] Invoice with ID 14 deleted successfully
+[2025-02-19 11:00:51 INFORMAT  Update] Invoice updated successfully
+[2025-02-19 11:01:51 INFORMAT  Delete] Invoice with ID 24 deleted successfully
+[2025-02-19 11:02:09 INFORMAT  Delete] Invoice with ID 22 deleted successfully
+[2025-02-19 11:02:38 INFORMAT  Update] Invoice updated successfully
+[2025-02-19 11:03:08 WARNING  LoginUser] Failed login attempt for username: khaled
+[2025-02-19 11:03:15 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-19 11:03:42 WARNING  RegisterUser] Password validation failed for user: hana
+[2025-02-19 11:04:09 INFORMAT  RegisterUser] User "hana" registered successfully.
+[2025-02-19 11:05:19 WARNING  LoginUser] Failed login attempt for username: hana

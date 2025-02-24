@@ -1,0 +1,41 @@
+﻿@using WebApp.DTOS
+@model LoginDto
+@{
+    ViewData["Title"] = "Loginpage";
+}
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="@Url.Content("~/css/LoginStyle.css")" />
+<!-- From Uiverse.io by nathann09 -->
+<body id="bodyid">
+
+<form class="form" asp-action="LoginUser" asp-controller="Account" method="post">
+    <p class="form-title">Sign in to your account</p>
+ 
+    <div class="input-container">
+            <input asp-for="UserName" id="usernamefield" type="text" placeholder="Enter UserName">
+        <span>
+        </span>
+    </div>
+    <div class="input-container">
+        <input asp-for="Password" id="passwordfield"type="password" placeholder="Enter password"/>
+    </div>
+        @if (ViewData["Errormessage"] != null)
+        {
+            <div id="error-message" style="color: red">
+                @ViewData["Errormessage"]
+            </div>
+
+        }
+    <button type="submit" class="submit" >
+        Sign in
+    </button>
+
+    <p class="signup-link">
+        No account?
+            <a asp-controller="Account" asp-action="Registerpage">Sign up</a>
+    </p>
+</form>
+</body>

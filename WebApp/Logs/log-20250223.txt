@@ -1,0 +1,12 @@
+[2025-02-23 12:58:37 WARNING  LoginUser] Failed login attempt for username: khaled
+[2025-02-23 12:58:41 WARNING  LoginUser] Failed login attempt for username: sacs
+[2025-02-23 12:58:42 ERROR  LoginUser] Invalid login request received for username: sacs
+[2025-02-23 12:58:47 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-23 12:58:54 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-23 12:58:55 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-23 12:58:56 WARNING  RegisterUser] Attempt to register with an existing username: khaled
+[2025-02-23 12:59:06 INFORMAT  RegisterUser] User "mooohhaammama" registered successfully.
+[2025-02-23 12:59:20 WARNING  RegisterUser] Password validation failed for user: omcac
+[2025-02-23 12:59:56 INFORMAT  Delete] Invoice with ID 25 deleted successfully
+[2025-02-23 13:04:04 INFORMAT  Update] Invoice updated successfully
+[2025-02-23 13:04:15 INFORMAT  Update] Invoice updated successfully
