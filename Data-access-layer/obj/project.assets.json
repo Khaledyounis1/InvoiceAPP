@@ -5235,9 +5235,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj",
-      "projectName": "Data-access-layer",
-      "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj",
+      "projectUniqueName": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj",
+      "projectName": "InvoiceApp.Data",
+      "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj",
       "packagesPath": "C:\\Users\\dev.5\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Data_access_layer.Models
+namespace InvoiceAppData.Models
 {
     public class Unit
     {

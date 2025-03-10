@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "InvoiceApi.Controllers.AccountController",
+    "ContainingType": "InvoiceApp.Api.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/Login",
     "HttpMethod": "POST",
@@ -9,14 +9,14 @@
     "Parameters": [
       {
         "Name": "userfromrequest",
-        "Type": "InvoiceApi.DTOS.Account.LoginDto",
+        "Type": "InvoiceApp.Service.DTOS.Account.LoginDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.AccountController",
+    "ContainingType": "InvoiceApp.Api.Controllers.AccountController",
     "Method": "Register",
     "RelativePath": "api/Account/Register",
     "HttpMethod": "POST",
@@ -25,14 +25,14 @@
     "Parameters": [
       {
         "Name": "userfromrequest",
-        "Type": "InvoiceApi.DTOS.Account.RegisterDto",
+        "Type": "InvoiceApp.Service.DTOS.Account.RegisterDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.InvoiceController",
+    "ContainingType": "InvoiceApp.Api.Controllers.InvoiceController",
     "Method": "Add",
     "RelativePath": "api/Invoice",
     "HttpMethod": "POST",
@@ -41,14 +41,14 @@
     "Parameters": [
       {
         "Name": "invoicefromrequest",
-        "Type": "InvoiceApi.DTOS.Invoice.InvoiceDto",
+        "Type": "InvoiceApp.Service.DTOS.Invoice.InvoiceDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.InvoiceController",
+    "ContainingType": "InvoiceApp.Api.Controllers.InvoiceController",
     "Method": "GetAll",
     "RelativePath": "api/Invoice",
     "HttpMethod": "GET",
@@ -58,7 +58,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.InvoiceController",
+    "ContainingType": "InvoiceApp.Api.Controllers.InvoiceController",
     "Method": "UpdateInvoice",
     "RelativePath": "api/Invoice",
     "HttpMethod": "PUT",
@@ -67,14 +67,14 @@
     "Parameters": [
       {
         "Name": "invoiceDto",
-        "Type": "InvoiceApi.DTOS.Invoice.InvoiceDto",
+        "Type": "InvoiceApp.Service.DTOS.Invoice.InvoiceDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.InvoiceController",
+    "ContainingType": "InvoiceApp.Api.Controllers.InvoiceController",
     "Method": "GetById",
     "RelativePath": "api/Invoice/{id}",
     "HttpMethod": "GET",
@@ -90,7 +90,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.InvoiceController",
+    "ContainingType": "InvoiceApp.Api.Controllers.InvoiceController",
     "Method": "DeleteInvoice",
     "RelativePath": "api/Invoice/{id}",
     "HttpMethod": "DELETE",
@@ -106,7 +106,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.InvoiceitemController",
+    "ContainingType": "InvoiceApp.Api.Controllers.InvoiceitemController",
     "Method": "Update",
     "RelativePath": "api/Invoiceitem",
     "HttpMethod": "PUT",
@@ -115,14 +115,14 @@
     "Parameters": [
       {
         "Name": "invoiceItem",
-        "Type": "Data_access_layer.Models.InvoiceItem",
+        "Type": "InvoiceAppData.Models.InvoiceItem",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.StoreController",
+    "ContainingType": "InvoiceApp.Api.Controllers.StoreController",
     "Method": "GetAll",
     "RelativePath": "api/Store",
     "HttpMethod": "GET",
@@ -132,7 +132,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "InvoiceApi.Controllers.StoreController",
+    "ContainingType": "InvoiceApp.Api.Controllers.StoreController",
     "Method": "Get",
     "RelativePath": "api/Store/{id}",
     "HttpMethod": "GET",

@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Data-access-layer\Data-access-layer.csproj" />
-    <ProjectReference Include="..\InvoiceAPI\InvoiceAPI.csproj" />
+    <ProjectReference Include="..\Data-access-layer\InvoiceApp.Data.csproj" />
+    <ProjectReference Include="..\InvoiceAPI\InvoiceApp.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

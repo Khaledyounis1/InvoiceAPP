@@ -1,6 +1,4 @@
-﻿using Data_access_layer.Models;
-using InvoiceApi.DTOS.Account;
-using InvoiceApi.Models;
+﻿using InvoiceAppData.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,8 +6,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using InvoiceApp.Service.DTOS.Account;
 
-namespace InvoiceApi.Controllers
+namespace InvoiceApp.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

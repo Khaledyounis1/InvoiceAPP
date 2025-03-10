@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Data_access_layer.Models
+namespace InvoiceAppData.Models
 {
     public class ApplicationUser : IdentityUser
     {

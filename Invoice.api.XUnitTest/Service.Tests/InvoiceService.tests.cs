@@ -1,15 +1,16 @@
-﻿using Data_access_layer.Models;
+﻿using InvoiceAppData.Models;
 using FluentAssertions;
-using InvoiceApi.DTOS.Invoice;
-using InvoiceApi.Models;
-using InvoiceAPI.GenericRepositories;
-using InvoiceAPI.Services.InvoiceService;
+
+using InvoiceApp.Infrastructure.Models;
+using InvoiceApp.Api.Services.InvoiceService;
 using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InvoiceApp.Service.DTOS.Invoice;
+using InvoiceApp.Infrastructure.Abstracts;
 
 
 

@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "Invoice.api.Tests/1.0.0": {
         "dependencies": {
-          "Data-access-layer": "1.0.0",
           "FluentAssertions.ArgumentMatchers.Moq": "3.2.0",
-          "InvoiceAPI": "1.0.0",
+          "InvoiceApp.Api": "1.0.0",
+          "InvoiceApp.Data": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "Moq": "4.20.72",
           "coverlet.collector": "6.0.0",
@@ -2035,24 +2035,12 @@
         }
       },
       "xunit.runner.visualstudio/2.5.3": {},
-      "Data-access-layer/1.0.0": {
+      "InvoiceApp.Api/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
-          "Microsoft.AspNetCore.Identity": "2.3.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12",
-          "Swashbuckle.AspNetCore": "6.6.2"
-        },
-        "runtime": {
-          "Data-access-layer.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "InvoiceAPI/1.0.0": {
-        "dependencies": {
-          "Data-access-layer": "1.0.0",
+          "InvoiceApp.Core": "1.0.0",
+          "InvoiceApp.Data": "1.0.0",
+          "InvoiceApp.Infrastructure": "1.0.0",
+          "InvoiceApp.Service": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
           "Microsoft.AspNetCore.Identity": "2.3.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
@@ -2065,7 +2053,60 @@
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
-          "InvoiceAPI.dll": {
+          "InvoiceApp.Api.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InvoiceApp.Core/1.0.0": {
+        "runtime": {
+          "InvoiceApp.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InvoiceApp.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12",
+          "Microsoft.AspNetCore.Identity": "2.3.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12",
+          "Swashbuckle.AspNetCore": "6.6.2"
+        },
+        "runtime": {
+          "InvoiceApp.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InvoiceApp.Infrastructure/1.0.0": {
+        "dependencies": {
+          "InvoiceApp.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12"
+        },
+        "runtime": {
+          "InvoiceApp.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InvoiceApp.Service/1.0.0": {
+        "dependencies": {
+          "InvoiceApp.Data": "1.0.0",
+          "InvoiceApp.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.Logging": "9.0.2",
+          "Serilog.AspNetCore": "9.0.0",
+          "Serilog.Settings.Configuration": "9.0.0",
+          "Serilog.Sinks.Console": "6.0.0",
+          "Serilog.Sinks.File": "6.0.0"
+        },
+        "runtime": {
+          "InvoiceApp.Service.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -3395,12 +3436,27 @@
       "path": "xunit.runner.visualstudio/2.5.3",
       "hashPath": "xunit.runner.visualstudio.2.5.3.nupkg.sha512"
     },
-    "Data-access-layer/1.0.0": {
+    "InvoiceApp.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "InvoiceAPI/1.0.0": {
+    "InvoiceApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InvoiceApp.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InvoiceApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InvoiceApp.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

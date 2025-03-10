@@ -3,7 +3,7 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "InvoiceAPI\\InvoiceAPI.csproj",
+        "Path": "InvoiceAPI\\InvoiceApp.Api.csproj",
         "Action": "Start"
       },
       {

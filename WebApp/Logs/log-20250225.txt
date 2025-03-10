@@ -1,0 +1,2 @@
+[2025-02-25 14:28:36 INFORMAT  Delete] Invoice with ID 23 deleted successfully
+[2025-02-25 14:29:00 INFORMAT  Create] Invoice created successfully

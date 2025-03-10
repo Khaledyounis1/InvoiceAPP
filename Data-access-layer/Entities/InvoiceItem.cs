@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace Data_access_layer.Models
+namespace InvoiceAppData.Models
 {
     public class InvoiceItem
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.Features;
 
-namespace Data_access_layer.Models
+namespace InvoiceAppData.Models
 {
     public class Store
     {

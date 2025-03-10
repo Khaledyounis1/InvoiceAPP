@@ -4,12 +4,12 @@
     "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceAPI\\InvoiceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj": {
+    "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj",
-        "projectName": "Data-access-layer",
-        "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj",
+        "projectUniqueName": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj",
+        "projectName": "InvoiceApp.Data",
+        "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj",
         "packagesPath": "C:\\Users\\dev.5\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\obj\\",
         "projectStyle": "PackageReference",
@@ -137,8 +137,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj": {
-                "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj"
+              "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj": {
+                "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj"
               }
             }
           }

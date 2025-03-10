@@ -1,8 +1,8 @@
-﻿using InvoiceApi.Controllers;
-using InvoiceApi.DTOS.Store;
+﻿using InvoiceApp.Api.Controllers;
+using InvoiceApp.Service.DTOS.Store;
 using FluentAssertions;
 using Invocie.api.Tests.TestModels;
-using InvoiceAPI.Services.StoreService;
+using InvoiceApp.Api.Services.StoreService;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;

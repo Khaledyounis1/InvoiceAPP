@@ -1,7 +1,7 @@
 using Serilog;
 using WebApp.Servicies;
 
-namespace InvoiceApi
+namespace InvoiceApp
 {
     public class Program
     {

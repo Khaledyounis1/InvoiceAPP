@@ -2254,7 +2254,17 @@
           }
         }
       },
-      "Data-access-layer/1.0.0": {
+      "InvoiceApp.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/InvoiceApp.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvoiceApp.Core.dll": {}
+        }
+      },
+      "InvoiceApp.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -2265,10 +2275,44 @@
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "compile": {
-          "bin/placeholder/Data-access-layer.dll": {}
+          "bin/placeholder/InvoiceApp.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Data-access-layer.dll": {}
+          "bin/placeholder/InvoiceApp.Data.dll": {}
+        }
+      },
+      "InvoiceApp.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "InvoiceApp.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12"
+        },
+        "compile": {
+          "bin/placeholder/InvoiceApp.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvoiceApp.Infrastructure.dll": {}
+        }
+      },
+      "InvoiceApp.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "InvoiceApp.Data": "1.0.0",
+          "InvoiceApp.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.Logging": "9.0.2",
+          "Serilog.AspNetCore": "9.0.0",
+          "Serilog.Settings.Configuration": "9.0.0",
+          "Serilog.Sinks.Console": "6.0.0",
+          "Serilog.Sinks.File": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InvoiceApp.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InvoiceApp.Service.dll": {}
         }
       }
     }
@@ -5707,15 +5751,33 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Data-access-layer/1.0.0": {
+    "InvoiceApp.Core/1.0.0": {
       "type": "project",
-      "path": "../Data-access-layer/Data-access-layer.csproj",
-      "msbuildProject": "../Data-access-layer/Data-access-layer.csproj"
+      "path": "../InvoiceApp.Core/InvoiceApp.Core.csproj",
+      "msbuildProject": "../InvoiceApp.Core/InvoiceApp.Core.csproj"
+    },
+    "InvoiceApp.Data/1.0.0": {
+      "type": "project",
+      "path": "../Data-access-layer/InvoiceApp.Data.csproj",
+      "msbuildProject": "../Data-access-layer/InvoiceApp.Data.csproj"
+    },
+    "InvoiceApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../InvoiceApp.Infrastructure/InvoiceApp.Infrastructure.csproj",
+      "msbuildProject": "../InvoiceApp.Infrastructure/InvoiceApp.Infrastructure.csproj"
+    },
+    "InvoiceApp.Service/1.0.0": {
+      "type": "project",
+      "path": "../InvoiceApp.Service/InvoiceApp.Service.csproj",
+      "msbuildProject": "../InvoiceApp.Service/InvoiceApp.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Data-access-layer >= 1.0.0",
+      "InvoiceApp.Core >= 1.0.0",
+      "InvoiceApp.Data >= 1.0.0",
+      "InvoiceApp.Infrastructure >= 1.0.0",
+      "InvoiceApp.Service >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.12",
       "Microsoft.AspNetCore.Identity >= 2.3.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.12",
@@ -5738,9 +5800,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceAPI\\InvoiceAPI.csproj",
-      "projectName": "InvoiceAPI",
-      "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceAPI\\InvoiceAPI.csproj",
+      "projectUniqueName": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceAPI\\InvoiceApp.Api.csproj",
+      "projectName": "InvoiceApp.Api",
+      "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceAPI\\InvoiceApp.Api.csproj",
       "packagesPath": "C:\\Users\\dev.5\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceAPI\\obj\\",
       "projectStyle": "PackageReference",
@@ -5766,8 +5828,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj": {
-              "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\Data-access-layer.csproj"
+            "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj": {
+              "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\Data-access-layer\\InvoiceApp.Data.csproj"
+            },
+            "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceApp.Core\\InvoiceApp.Core.csproj": {
+              "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceApp.Core\\InvoiceApp.Core.csproj"
+            },
+            "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceApp.Infrastructure\\InvoiceApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceApp.Infrastructure\\InvoiceApp.Infrastructure.csproj"
+            },
+            "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceApp.Service\\InvoiceApp.Service.csproj": {
+              "projectPath": "C:\\Users\\dev.5\\Downloads\\ApplictionInvoice\\InvoiceApp.Service\\InvoiceApp.Service.csproj"
             }
           }
         }

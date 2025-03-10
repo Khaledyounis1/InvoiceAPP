@@ -1,4 +1,4 @@
-﻿using InvoiceAPI.Services.InvoiceService;
+﻿using InvoiceApp.Api.Services.InvoiceService;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Moq;
 using System;
@@ -6,17 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using InvoiceApi.Controllers;
-using InvoiceApi.Models;
-using InvoiceApi.DTOS.Invoice;
+using InvoiceApp.Api.Controllers;
 using FluentAssertions;
 using System.Net;
 using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using Invocie.api.Tests.TestModels;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Data_access_layer.Models;
+using InvoiceApp.Service.DTOS.Invoice;
 [assembly:CollectionBehavior(collectionBehavior:CollectionBehavior.CollectionPerClass,MaxParallelThreads =6)]
 namespace Invocie.api.Tests.Controller.Tests.Invocie.tests
 {

@@ -1,11 +1,11 @@
-﻿using InvoiceApi.DTOS.Invoice;
-using InvoiceApi.Models;
+﻿using InvoiceApp.Api.Services.InvoiceService;
+using InvoiceApp.Service.DTOS.Invoice;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using InvoiceAPI.Services.InvoiceService;
 
-namespace InvoiceApi.Controllers
+
+namespace InvoiceApp.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

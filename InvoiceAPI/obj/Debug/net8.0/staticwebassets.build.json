@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "9b27bpiPBcqJ/cvOnufjxRr9a3CtdaQRyQ0+MAfSFDs=",
-  "Source": "InvoiceAPI",
-  "BasePath": "_content/InvoiceAPI",
+  "Hash": "XV9YEeL2w/oKMDh7ME1L5G6l7tqIT5D+xpL1wptoXco=",
+  "Source": "InvoiceApp.Api",
+  "BasePath": "_content/InvoiceApp.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

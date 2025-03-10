@@ -1,4 +1,4 @@
-﻿namespace Data_access_layer
+﻿namespace InvoiceAppData
 {
     internal class Program
     {

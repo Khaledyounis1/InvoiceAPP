@@ -1,5 +1,5 @@
 
-using InvoiceApi.Models;
+using InvoiceApp.Infrastructure.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,14 +8,16 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Text;
 using Serilog;
-using Microsoft.Extensions.Logging;
-using InvoiceAPI.Services.InvoiceService;
-using InvoiceAPI.Services.InvocieitemService;
-using InvoiceAPI.Services.StoreService;
-using InvoiceAPI.GenericRepositories;
-using Data_access_layer.Models;
 
-namespace InvoiceApi
+using InvoiceApp.Api.Services.InvoiceService;
+using InvoiceApp.Api.Services.StoreService;
+using InvoiceApp.Infrastructure.GenericRepositories;
+using InvoiceAppData.Models;
+using InvoiceApp.Infrastructure.Abstracts;
+using InvoiceApp.Infrastructure;
+
+
+namespace InvoiceApp
 {
     public class Program
     {
@@ -30,7 +32,7 @@ namespace InvoiceApi
                         Options.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
                     }
                 );
-            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddInfrastructureDependencies();
             //builder.Services.AddScoped<IinvoiceRepository, invoiceRepository>();
             builder.Services.AddScoped<IinvoiceService, InvoiceService>();
             //builder.Services.AddScoped<IStoreRepository, StoreRepository>();

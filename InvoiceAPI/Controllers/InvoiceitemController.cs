@@ -1,10 +1,10 @@
-﻿using InvoiceApi.Models;
+﻿
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using InvoiceAPI.Services.InvocieitemService;
-using Data_access_layer.Models;
+using InvoiceAppData.Models;
+using InvoiceApp.Api.Services.InvocieitemService;
 
-namespace InvoiceApi.Controllers
+namespace InvoiceApp.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
